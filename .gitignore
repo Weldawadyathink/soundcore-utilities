@@ -1,0 +1,10 @@
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.xcscmblueprint
+.DS_Store
+
+# Bluetooth captures: research data containing device addresses; keep them out of the public repo
+*.pklg

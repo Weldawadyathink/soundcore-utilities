@@ -2,31 +2,17 @@
 //  Soundcore_UtilitiesApp.swift
 //  Soundcore Utilities
 //
-//  Created by Spenser Bushey on 4/9/26.
-//
 
 import SwiftUI
-import SwiftData
 
 @main
 struct Soundcore_UtilitiesApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    private let bluetooth = BluetoothManager.shared
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(bluetooth)
         }
-        .modelContainer(sharedModelContainer)
     }
 }
