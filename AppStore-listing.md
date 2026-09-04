@@ -47,8 +47,7 @@ First release.
 ## URLs
 
 - **Support URL**: https://github.com/Weldawadyathink/soundcore-utilities
-- **Privacy policy URL** (required): a page stating the app collects no data. The README or a
-  GitHub Pages page works; paste the same text as the in-app privacy statement.
+- **Privacy policy URL** (required): https://github.com/Weldawadyathink/soundcore-utilities/blob/main/PRIVACY.md
 - **Marketing URL**: optional, same repo.
 
 ## App Privacy questionnaire
