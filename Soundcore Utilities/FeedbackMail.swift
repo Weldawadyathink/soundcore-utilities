@@ -11,7 +11,7 @@ import SwiftUI
 
 enum Feedback {
     static let address = "developer@weldawadyathink.com"
-    static let subject = "Soundcore Utilities feedback"
+    static let subject = "Headphone Control feedback"
 
     static var canComposeInApp: Bool { MFMailComposeViewController.canSendMail() }
 
@@ -56,7 +56,7 @@ struct FeedbackMailView: UIViewControllerRepresentable {
         controller.setSubject(Feedback.subject)
         controller.setMessageBody(Feedback.body(diagnostics: diagnostics), isHTML: false)
         if let data = log.data(using: .utf8), !log.isEmpty {
-            controller.addAttachmentData(data, mimeType: "text/plain", fileName: "soundcore-utilities-log.txt")
+            controller.addAttachmentData(data, mimeType: "text/plain", fileName: "headphone-control-log.txt")
         }
         if let snapshots, let data = snapshots.data(using: .utf8) {
             controller.addAttachmentData(data, mimeType: "text/plain", fileName: "state-snapshots.txt")

@@ -708,7 +708,7 @@ final class BluetoothManager: NSObject {
         let version = info?["CFBundleShortVersionString"] as? String ?? "?"
         let build = info?["CFBundleVersion"] as? String ?? "?"
         var lines = [
-            "App: \(version) (\(build))",
+            "App: Headphone Control \(version) (\(build))",
             "iOS: \(ProcessInfo.processInfo.operatingSystemVersionString)",
             "Device: \(Self.deviceModelIdentifier)",
             "Bluetooth: \(Self.describe(state))",

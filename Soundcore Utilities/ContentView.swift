@@ -27,7 +27,7 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Sleep A30")
+            .navigationTitle("Headphone Control")
             .toolbar {
                 if developerMode {
                     ToolbarItem(placement: .topBarLeading) {
@@ -434,7 +434,7 @@ struct SettingsView: View {
                 }
 
                 Section {
-                    Text("Soundcore and Sleep A30 are trademarks of Anker Innovations. This app is an independent project and is not affiliated with, endorsed by, or supported by Anker.")
+                    Text("Headphone Control is an independent project. Soundcore and Sleep A30 are trademarks of Anker Innovations; this app is not affiliated with, endorsed by, or supported by Anker.")
                     Text("The app stores nothing outside your device and collects no data. Bluetooth is used only to talk to your earbuds. A feedback email is composed in your mail app and sent only if you choose to send it.")
                 } header: {
                     Text("Legal and privacy")

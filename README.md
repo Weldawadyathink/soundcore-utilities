@@ -1,6 +1,6 @@
-# Soundcore Utilities
+# Headphone Control for Soundcore Sleep A30
 
-An independent iOS app that controls the Anker Soundcore Sleep A30 earbuds and exposes every
+Headphone Control is an independent iOS app that controls the Anker Soundcore Sleep A30 earbuds and exposes every
 control to Shortcuts and Siri: audio source (Bluetooth or local), noise cancelling, the sleep
 timer, and the once-asleep behaviour.
 
